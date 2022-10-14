@@ -7,6 +7,14 @@
     <body>
         欢迎来到Remake Wiki
         <hr>
-        Hello XYN
+        Hello XYN. <span id="counter"></span>
     </body>
+    <script>
+        let t = 3;
+        let counter = document.getElementById("counter");
+        setInterval(function() {
+            counter.innerHTML = "页面将在" + t + "秒后跳转";
+            t--;
+        }, 1000);
+    </script>
 </html>
